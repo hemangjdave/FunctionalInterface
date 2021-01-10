@@ -50,9 +50,9 @@ public class MapKeyValueSwitcher {
     }
 
     private static HashMap<String, Animal> createAnimalMap() {
-        Animal animal1 = new Animal("dog", "wolf descedent");
-        Animal animal2 = new Animal("cat", "feeling with nine lives");
-        Animal animal3 = new Animal("rat", "rodent with long tail");
+        var animal1 = new Animal("dog", "wolf descedent");
+        var animal2 = new Animal("cat", "feeling with nine lives");
+        var animal3 = new Animal("rat", "rodent with long tail");
         var map = new HashMap<String, Animal>();
         map.put(animal1.getType(), animal1);
         map.put(animal2.getType(), animal2);

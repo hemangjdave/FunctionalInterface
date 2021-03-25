@@ -1,14 +1,16 @@
-package com.techrevolution.functionalinterface.ch6.longproblems;
+package com.techrevolution.functionalinterface.ch7.longproblems.first;
 
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Getter;
 import lombok.ToString;
 
 @AllArgsConstructor
 @Getter
 @ToString
-class EBooks {
+@Builder
+class AudioFiles extends FileFormat{
     private final String title;
-    private final int numOfPages;
+    private final String format;
     private final int memorySize;
 }

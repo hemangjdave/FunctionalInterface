@@ -1,14 +1,16 @@
-package com.techrevolution.functionalinterface.ch6.longproblems;
+package com.techrevolution.functionalinterface.ch7.longproblems.first;
 
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Getter;
 import lombok.ToString;
 
 @AllArgsConstructor
 @Getter
 @ToString
-class AudioFiles {
+@Builder
+class Dvd extends FileFormat{
     private final String title;
-    private final String format;
+    private final String companyName;
     private final int memorySize;
 }

@@ -1,4 +1,4 @@
-package com.techrevolution.functionalinterface.ch6.longproblems;
+package com.techrevolution.functionalinterface.ch6.longproblems.first;
 
 import lombok.extern.slf4j.Slf4j;
 

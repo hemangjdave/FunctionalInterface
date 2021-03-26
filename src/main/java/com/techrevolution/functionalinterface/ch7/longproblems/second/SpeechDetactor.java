@@ -14,10 +14,17 @@ public class SpeechDetactor {
     private List<Wordings> wordings = new ArrayList<>();
 
     public static void main(String[] args) {
+        long startTime = System.currentTimeMillis();
         SpeechDetactor detactor = new SpeechDetactor();
         detactor.run();
-        String userSentence = detactor.getUserSentence();
+        String userSentence = "a programmer compiled a program below";//detactor.getUserSentence();
         Stream.of(userSentence.split(" ")).forEach(detactor::determineWordPart);
+        long endTIme = System.currentTimeMillis();
+        log.info("startime is:----{}", startTime);
+        log.info("endtime is:----{}", endTIme);
+        double d = (endTIme - startTime) / 1000;
+        log.info("Total time taken is:---{}" , (endTIme - startTime));
+        log.info("Total time taken in seconds:---{}" , d);
     }
 
     private void determineWordPart(String word) {

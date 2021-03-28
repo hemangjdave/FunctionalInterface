@@ -17,7 +17,7 @@ public class SpeechDetactor2 {
         listMap.put("Articles", detactor2.getArticles());
         listMap.put("Propositions", detactor2.getPrepositions());
         listMap.put("Verbs", detactor2.getVerbs());
-        String userSentence = "a programmer compiled a program below";//detactor2.getUserSentence();
+        String userSentence = detactor2.getUserSentence();
         // a programmer below compiled a program
         String[] strings = userSentence.split(" ");
         Stream.of(strings).forEach(detactor2::findWordType);

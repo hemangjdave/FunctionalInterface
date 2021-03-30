@@ -1,4 +1,4 @@
-package com.techrevolution.functionalinterface.ch9.shortproblems;
+package com.techrevolution.functionalinterface.ch9.shortproblems.practice;
 
 import lombok.extern.slf4j.Slf4j;
 

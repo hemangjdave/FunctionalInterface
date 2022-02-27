@@ -10,7 +10,6 @@ public class ComparingObjects {
         String string = removeVowels("Hemang Dave");
         log.info(string);
         Comparator<String> stringComparator = String::compareTo;
-
         Comparator<String> comparator = Comparator.naturalOrder();
         log.info(String.valueOf(comparator.thenComparing(stringComparator).compare("Larry", "Libby")));
         log.info(String.valueOf(comparator.reversed().thenComparing(stringComparator).compare("Larry", "Libby")));
